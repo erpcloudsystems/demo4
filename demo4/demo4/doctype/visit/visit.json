@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-01 12:04:05.602778",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "type",
+  "date",
+  "time",
+  "new_date",
+  "column_break_6ojyd",
+  "sales_person",
+  "sales_partner",
+  "remarks",
+  "department",
+  "branch",
+  "section_break_ntg4n",
+  "notes",
+  "amended_from",
+  "table_tab",
+  "visit_tabel"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "type",
+   "options": "\n\u0632\u064a\u0627\u0631\u0629\n\u0627\u062a\u0635\u0627\u0644"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "time"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "notes"
+  },
+  {
+   "fieldname": "new_date",
+   "fieldtype": "Datetime",
+   "label": "new date"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "label": "sales person ",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "sales_partner",
+   "fieldtype": "Link",
+   "label": "sales partner",
+   "options": "Sales Partner"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "remarks"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "department ",
+   "options": "Department"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6ojyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ntg4n",
+   "fieldtype": "Tab Break",
+   "label": "reer"
+  },
+  {
+   "fieldname": "table_tab",
+   "fieldtype": "Tab Break",
+   "label": "Table"
+  },
+  {
+   "fieldname": "visit_tabel",
+   "fieldtype": "Table",
+   "label": "visit tabel",
+   "options": "visit table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-01 13:59:21.369666",
+ "modified_by": "Administrator",
+ "module": "demo4",
+ "name": "Visit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

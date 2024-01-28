@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-10 18:40:23.393337",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "column_break_wgvtp",
+  "to_date",
+  "section_break_jozmf",
+  "get_opportunities",
+  "product_inquiry_table",
+  "send_whats_app_msg"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_wgvtp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_jozmf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_opportunities",
+   "fieldtype": "Button",
+   "label": "Get Opportunities"
+  },
+  {
+   "fieldname": "product_inquiry_table",
+   "fieldtype": "Table",
+   "label": "Product inquiry Table",
+   "options": "Product inquiry Table"
+  },
+  {
+   "fieldname": "send_whats_app_msg",
+   "fieldtype": "Button",
+   "label": "Send Whats App Msg"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-11 13:52:07.153729",
+ "modified_by": "Administrator",
+ "module": "demo4",
+ "name": "Product Inquiry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
