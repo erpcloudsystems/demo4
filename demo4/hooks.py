@@ -7,6 +7,24 @@ app_description = "demo4"
 app_email = " "
 app_license = "MIT"
 
+doc_events = {
+	"Asset Maintenance Log": {
+		"before_insert": "demo4.asset_maintenance_log.asset_maintenance_log.before_insert",
+		"after_insert": "demo4.asset_maintenance_log.asset_maintenance_log.after_insert",
+		"onload": "demo4.asset_maintenance_log.asset_maintenance_log.onload",
+		"before_validate": "demo4.asset_maintenance_log.asset_maintenance_log.before_validate",
+		"validate": "demo4.asset_maintenance_log.asset_maintenance_log.validate",
+		"on_submit": "demo4.asset_maintenance_log.asset_maintenance_log.on_submit",
+		"on_cancel": "demo4.asset_maintenance_log.asset_maintenance_log.on_cancel",
+		"on_update_after_submit": "demo4.asset_maintenance_log.asset_maintenance_log.on_update_after_submit",
+		"before_save": "demo4.asset_maintenance_log.asset_maintenance_log.before_save",
+		"before_cancel": "demo4.asset_maintenance_log.asset_maintenance_log.before_cancel",
+		"on_update": "demo4.asset_maintenance_log.asset_maintenance_log.on_update",
+	}
+}
+doctype_js = {
+	"Asset Maintenance Log" : "asset_maintenance_log/asset_maintenance_log.js",
+}
 # Includes in <head>
 # ------------------
 
