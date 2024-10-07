@@ -20,7 +20,8 @@ doc_events = {
 		"before_save": "demo4.asset_maintenance_log.asset_maintenance_log.before_save",
 		"before_cancel": "demo4.asset_maintenance_log.asset_maintenance_log.before_cancel",
 		"on_update": "demo4.asset_maintenance_log.asset_maintenance_log.on_update",
-	}
+	},
+	
 }
 doctype_js = {
 	"Asset Maintenance Log" : "asset_maintenance_log/asset_maintenance_log.js",
@@ -113,7 +114,7 @@ doctype_js = {
 # Override standard doctype classes
 
 # override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"Workflow Action": "demo4.overrides.CustomWorkflowAction"
 # }
 
 # Document Events
@@ -131,23 +132,23 @@ doctype_js = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"demo4.tasks.all"
-#	],
-#	"daily": [
-#		"demo4.tasks.daily"
-#	],
-#	"hourly": [
-#		"demo4.tasks.hourly"
-#	],
-#	"weekly": [
-#		"demo4.tasks.weekly"
-#	],
-#	"monthly": [
-#		"demo4.tasks.monthly"
-#	],
-# }
+scheduler_events = {
+	"all": [
+		"demo4.scheduler_events.all.all"
+	],
+	"daily": [
+		"demo4.scheduler_events.daily.daily"
+	],
+	"hourly": [
+		"demo4.scheduler_events.hourly.hourly"
+	],
+	"weekly": [
+		"demo4.scheduler_events.weekly.weekly"
+	],
+	"monthly": [
+		"demo4.scheduler_events.monthly.monthly"
+	],
+}
 
 # Testing
 # -------
@@ -217,3 +218,13 @@ doctype_js = {
 # auth_hooks = [
 #	"demo4.auth.validate"
 # ]
+
+
+# from frappe.utils import get_url
+# url = get_url()
+# if url == "https://demo4.erpcloud.systems":
+# 	from frappe.workflow.doctype.workflow_action.workflow_action import process_workflow_actions 
+# 	from demo4.overrides.workflowaction import custom_process_workflow_actions
+
+
+# 	process_workflow_actions = custom_process_workflow_actions

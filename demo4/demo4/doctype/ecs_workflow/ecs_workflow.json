@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 14:46:41.474470",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctype_section",
+  "select_doctype",
+  "is_active",
+  "column_break_znps",
+  "send_to_workflow",
+  "condition_for_section",
+  "branch",
+  "department",
+  "column_break_bfnp",
+  "designation",
+  "states_section",
+  "document_states",
+  "section_break_aoda",
+  "transition"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctype_section",
+   "fieldtype": "Section Break",
+   "label": "Doctype"
+  },
+  {
+   "fieldname": "select_doctype",
+   "fieldtype": "Link",
+   "label": "Select Doctype",
+   "options": "DocType"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "condition_for_section",
+   "fieldtype": "Section Break",
+   "label": "Condition For"
+  },
+  {
+   "default": "0",
+   "fieldname": "branch",
+   "fieldtype": "Check",
+   "label": "Branch"
+  },
+  {
+   "default": "0",
+   "fieldname": "department",
+   "fieldtype": "Check",
+   "label": "Department"
+  },
+  {
+   "fieldname": "column_break_bfnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "designation",
+   "fieldtype": "Check",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "states_section",
+   "fieldtype": "Section Break",
+   "label": "States"
+  },
+  {
+   "fieldname": "document_states",
+   "fieldtype": "Table",
+   "label": "Document States",
+   "options": "Workflow Document State"
+  },
+  {
+   "fieldname": "section_break_aoda",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "transition",
+   "fieldtype": "Table",
+   "label": "Transition",
+   "options": "ECS Workflow Transition"
+  },
+  {
+   "fieldname": "column_break_znps",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "send_to_workflow",
+   "fieldtype": "Button",
+   "label": "Send To Workflow"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-18 15:30:28.386754",
+ "modified_by": "Administrator",
+ "module": "demo4",
+ "name": "ECS WorkFlow",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 import frappe
 from frappe import _
 
-
 @frappe.whitelist()
 def before_insert(doc, method=None):
 	pass
@@ -74,12 +73,15 @@ def on_submit(doc, method=None):
 
 @frappe.whitelist()
 def on_cancel(doc, method=None):
+	from demo4.overrides.workflowaction import custom_process_workflow_actions
+	custom_process_workflow_actions(doc,"on_update")
 	if doc.custom_stock_entry:
 		stock_entry = frappe.get_doc("Stock Entry", doc.custom_stock_entry)
 		stock_entry.cancel()
 @frappe.whitelist()
 def on_update_after_submit(doc, method=None):
-	pass
+	from demo4.overrides.workflowaction import custom_process_workflow_actions
+	custom_process_workflow_actions(doc,"on_update")
 @frappe.whitelist()
 def before_save(doc, method=None):
 	pass
@@ -88,4 +90,5 @@ def before_cancel(doc, method=None):
 	pass
 @frappe.whitelist()
 def on_update(doc, method=None):
-	pass
+	from demo4.overrides.workflowaction import custom_process_workflow_actions
+	custom_process_workflow_actions(doc,"on_update")
